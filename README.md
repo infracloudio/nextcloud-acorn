@@ -6,7 +6,15 @@ Acornfile for running Nextcloud on Acorn.
 
 You can deploy the sample web app on the Acorn SaaS Platform to test the Application.
 
-### Steps
+## Nextcloud Acornfile
+
+We define a few things in this Acornfile:
+
+- **Containers**: These are the containers that will be deployed for running Nextcloud. We have a single Nextcloud container for which we are setting the environment variables returned from the MariaDB Acorn service.
+- **Services**: Services in Acron are external services that your application can utilize. In this case, we are using the [MariaDB Acorn service](https://github.com/acorn-io/mariadb/pkgs/container/mariadb).
+
+
+## Steps
 
 1. Login into the Acorn SaaS Platform using the Github Sign-In option with your Github user.
 2. You can select the "Create Acorn" option to create new Acorns and deploy your Application.
