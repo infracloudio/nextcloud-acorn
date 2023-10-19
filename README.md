@@ -22,7 +22,7 @@ We define a few things in this Acornfile:
   * Select "From Acorn Image" to deploy the sample Application and select its Image
   * Provide any random name such as `web-app` and keeping Project's default Region, type in the below Acorn image and choose Create 
     ```bash
-    ghcr.io/infracloudio/nextcloud-acorn:v0.0.1
+    ghcr.io/infracloudio/nextcloud-acorn:v0.0.2
     ```
 4. Now the sample App is provisioned on the Acorn SaaS Platform and is available for **up to 2 hours**.
 5. Once the Acorn is running, you can access it by clicking the Endpoint or the redirect link.
