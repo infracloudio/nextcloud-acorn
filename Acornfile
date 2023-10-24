@@ -6,10 +6,10 @@ containers: {
   nextcloud: {
     image: "nextcloud:apache"
     env: {
-      "MARIADB_HOST": "@{services.mariadb.address}"
-      "MARIADB_DATABASE": "@{services.mariadb.data.dbName}"
-      "MARIADB_USER": "@{services.mariadb.secrets.user.username}"
-      "MARIADB_PASSWORD": "@{services.mariadb.secrets.user.password}"
+      "MYSQL_HOST": "@{services.mariadb.address}"
+      "MYSQL_DATABASE": "@{services.mariadb.data.dbName}"
+      "MYSQL_USER": "@{services.mariadb.secrets.user.username}"
+      "MYSQL_PASSWORD": "@{services.mariadb.secrets.user.password}"
       "PHP_UPLOAD_LIMIT": "1G"
     }
     dependsOn: ["mariadb"]
